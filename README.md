@@ -139,4 +139,9 @@ python generate_data.py --batch-size 10 --iterations 50
 
 - Generates 10 questions per batch until 50 successful queries per node type.
 
-- Stores results in successful_queries/GS_candidates/.
+- Stores results in successful_queries/GS_candidates/.\
+
+
+## Example output
+
+Sample of the synthetic data per node-type are shown in `GS_candidates` folder
