@@ -1,0 +1,11 @@
+tqdm
+dotenv
+jwt
+pandas
+
+neo4j
+
+langchain
+langchain_google_genai
+langchain_ollama
+
