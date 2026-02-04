@@ -20,7 +20,7 @@ The tool performs the following steps:
 
 - **Batch generation:** Generate multiple questions per node in each iteration.  
 - **Selective node processing:** Include or exclude specific node types.  
-- **Automatic saving:** Saves generated and successful queries in JSON format.  
+- **Automatic saving:** Saves successful queries in JSON format.  
 - **Environment-based configuration:** Connection credentials are loaded from environment variables.  
 
 ---
