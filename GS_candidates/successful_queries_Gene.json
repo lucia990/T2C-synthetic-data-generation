@@ -1,0 +1,46 @@
+[
+    {
+        "nl_question": "What is the approved symbol for the gene TTN?",
+        "cypher_translation": "MATCH (g:Gene {approvedSymbol: 'TTN'}) RETURN g.approvedSymbol AS ApprovedSymbol"
+    },
+    {
+        "nl_question": "What chromosome does the gene BRCA2 reside on?",
+        "cypher_translation": "MATCH (g:Gene {approvedSymbol: 'BRCA2'}) RETURN g.chromosome AS Chromosome"
+    },
+    {
+        "nl_question": "What is the sequence for the protein encoded by the gene ATM?",
+        "cypher_translation": "MATCH (g:Gene {approvedSymbol: 'ATM'})-[:ProteinEncodedByGene]->(p:Protein) RETURN p.sequence AS ProteinSequence"
+    },
+    {
+        "nl_question": "What is the approved symbol for the gene TTN?",
+        "cypher_translation": "MATCH (g:Gene {displayName: 'TTN'}) RETURN g.approvedSymbol AS ApprovedSymbol"
+    },
+    {
+        "nl_question": "In which chromosome is the gene BRCA2 located?",
+        "cypher_translation": "MATCH (g:Gene {displayName: 'BRCA2'}) RETURN g.chromosome AS Chromosome"
+    },
+    {
+        "nl_question": "What are the symbols for the gene TTN-AS1?",
+        "cypher_translation": "MATCH (g:Gene {displayName: 'TTN-AS1'}) RETURN g.symbols AS Symbols"
+    },
+    {
+        "nl_question": "What is the gene name for the protein encoded by ATM?",
+        "cypher_translation": "MATCH (p:Protein)-[:ProteinEncodedByGene]->(g:Gene {displayName: 'ATM'}) RETURN g.displayName AS GeneName"
+    },
+    {
+        "nl_question": "What is the approved symbol for the gene TTN?",
+        "cypher_translation": "MATCH (g:Gene {displayName: 'TTN'}) RETURN g.approvedSymbol AS ApprovedSymbol"
+    },
+    {
+        "nl_question": "Which chromosome does the gene BRCA2 belong to?",
+        "cypher_translation": "MATCH (g:Gene {displayName: 'BRCA2'}) RETURN g.chromosome AS Chromosome"
+    },
+    {
+        "nl_question": "What are the synonyms for the gene TTN-AS1?",
+        "cypher_translation": "MATCH (g:Gene {displayName: 'TTN-AS1'}) RETURN g.synonyms AS Synonyms"
+    },
+    {
+        "nl_question": "Is there any known gene-disease association for the gene ATM?",
+        "cypher_translation": "MATCH (g:Gene {displayName: 'ATM'})-[:GeneAssociatedWithDisorder]->(d:Disorder) RETURN d.displayName AS DisorderName"
+    }
+]

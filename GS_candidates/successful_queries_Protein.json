@@ -1,0 +1,42 @@
+[
+    {
+        "nl_question": "Which proteins interact with TRI67_HUMAN?",
+        "cypher_translation": "MATCH (p1:Protein)-[:ProteinInteractsWithProtein]->(p2:Protein {displayName: 'TRI67_HUMAN'}) RETURN p1.displayName AS InteractingProtein"
+    },
+    {
+        "nl_question": "What GO terms are associated with PRKN_HUMAN?",
+        "cypher_translation": "MATCH (p:Protein {displayName: 'PRKN_HUMAN'})-[:ProteinHasGOAnnotation]->(go:GO) RETURN go.displayName AS GOTerm"
+    },
+    {
+        "nl_question": "What proteins are encoded by the human gene TRI67?",
+        "cypher_translation": "MATCH (g:Gene {displayName: 'TRI67'})-[:ProteinEncodedByGene]->(p:Protein) RETURN p.displayName AS ProteinName"
+    },
+    {
+        "nl_question": "Is there any known interaction between protein PRKN and protein EGFR?",
+        "cypher_translation": "MATCH (p1:Protein {displayName: 'PRKN'})-[:ProteinInteractsWithProtein]->(p2:Protein {displayName: 'EGFR'}) RETURN p1.displayName AS Protein1, p2.displayName AS Protein2"
+    },
+    {
+        "nl_question": "Which tissues does protein ZRAN1 get expressed in?",
+        "cypher_translation": "MATCH (p:Protein {displayName: 'ZRAN1'})-[:ProteinExpressedInTissue]->(t:Tissue) RETURN t.displayName AS TissueName"
+    },
+    {
+        "nl_question": "What is the gene that encodes the protein TRI67_HUMAN?",
+        "cypher_translation": "MATCH (p:Protein {displayName: 'TRI67_HUMAN'})<-[:ProteinEncodedByGene]-(g:Gene) RETURN g.displayName AS GeneName"
+    },
+    {
+        "nl_question": "What GO annotations does the protein P53_HUMAN have?",
+        "cypher_translation": "MATCH (p:Protein {displayName: 'P53_HUMAN'})-[:ProteinHasGOAnnotation]->(go:GO) RETURN go.displayName AS GOAnnotation"
+    },
+    {
+        "nl_question": "Is there any pathway that the protein RAF1_HUMAN is involved in?",
+        "cypher_translation": "MATCH (p:Protein {displayName: 'RAF1_HUMAN'})-[:ProteinInPathway]->(pw:Pathway) RETURN pw.displayName AS PathwayName"
+    },
+    {
+        "nl_question": "Which diseases are associated with the protein TRI67_HUMAN?",
+        "cypher_translation": "MATCH (p:Protein {displayName: 'TRI67_HUMAN'})<-[:ProteinEncodedByGene]-(g:Gene)-[:GeneAssociatedWithDisorder]->(d:Disorder) RETURN d.displayName AS DisorderName"
+    },
+    {
+        "nl_question": "What are the GO annotations for the protein ZRAN1_HUMAN?",
+        "cypher_translation": "MATCH (p:Protein {displayName: 'ZRAN1_HUMAN'})-[:ProteinHasGOAnnotation]->(go:GO) RETURN go.displayName AS GOAnnotation"
+    }
+]
