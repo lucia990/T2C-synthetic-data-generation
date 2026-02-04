@@ -40,7 +40,9 @@ pip install -r requirements.txt
 ```
 
 3. Set up environment variables
+   
 The tool requires the following environment variables:
+
     NEO4J_URI:	Neo4j connection URI (e.g., bolt://localhost:7687)
     NEO4J_USER:	Neo4j username
     NEO4J_PASSWORD:	Neo4j password
