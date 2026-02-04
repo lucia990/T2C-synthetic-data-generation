@@ -122,7 +122,7 @@ Saves JSON files under successful_queries/<output_dir>/
 | `output_dir`              | `'GS_candidates'` | Directory where JSON output is saved             |
 
 
-## Example workflow
+## Example workflow [NeDRex](http://neo4j.nedrex.net/browser/?connectURL=neo4j.nedrex.net:6689&db=neo4j&preselectAuthMethod=NO_AUTH)
 
 ```bash
 export NEO4J_URI="bolt://localhost:7687"
