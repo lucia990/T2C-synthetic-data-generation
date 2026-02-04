@@ -30,8 +30,8 @@ The tool performs the following steps:
 1. Clone the repository:
 
 ```bash
-git clone <YOUR_REPO_URL>
-cd <YOUR_REPO_DIRECTORY>
+git clone https://github.com/lucia990/T2C-synthetic-data-generation/
+cd T2C-synthetic-data-generation
 ```
 
 2. Install dependencies: 
