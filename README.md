@@ -135,7 +135,7 @@ export OLLAMA_COSY_API_KEY="your-ollama-api-key"
 
 python generate_data.py --batch-size 10 --iterations 50
 ```
-- Connects to Neo4j at bolt://localhost:7687. (NeDRex)
+- Connects to Neo4j at bolt://localhost:7687. (NeDRex Neo4j endpoints)
 
 - Generates 10 questions per batch until 50 successful queries per node type.
 
