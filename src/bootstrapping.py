@@ -54,10 +54,10 @@ def generate_synthetic_data(neo4j_client, schema, node_type, num_questions_per_b
 
     # Save successful queries to a file
     try:
-        os.makedirs(os.path.join('successful_queries', dir_name), exist_ok=True)
+        os.makedirs(os.path.join(dir_name), exist_ok=True)
     except FileExistsError:
         pass
-    output_file = os.path.join('successful_queries', dir_name,  f'successful_queries_{node_type}.json')
+    output_file = os.path.join(dir_name, f'successful_queries_{node_type}.json')
     # Save list to compute statistics HERE
     with open(output_file, "w") as f:
         json.dump(successful_queries, f, indent=4)
