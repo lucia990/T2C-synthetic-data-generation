@@ -8,7 +8,7 @@ It is designed primarily for **biological knowledge graphs**, but can be adapted
 The tool performs the following steps:
 
 1. Connects to a Neo4j database and retrieves its schema.  
-2. Selects nodes to process (all nodes, included nodes, or excluding certain nodes).  
+2. Selects nodes to process (all nodes, included nodes or excluding certain nodes).  
 3. Generates batches of natural language questions for each node type.  
 4. Translates these questions into Cypher queries.  
 5. Executes queries on Neo4j to determine which are successful.  
