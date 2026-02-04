@@ -1,6 +1,7 @@
-# Environment variables
+
 .env
-GS_candidates
+.idea
+GS_candidates/
 # Python cache
 __pycache__/
 *.pyc
